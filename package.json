@@ -23,6 +23,12 @@
     "lodash": "^3.10.1"
   },
   "devDependencies": {
+    "bower": "^1.5.2",
+    "del": "^2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.0",
     "tap": "^1.4.0"
   }
 }
