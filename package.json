@@ -1,0 +1,28 @@
+{
+  "name": "f2e-workflow-labs",
+  "version": "1.0.0",
+  "description": "前端工程領域在近幾年可謂百家爭鳴、百花齊放，越來越多的前端框架、前端套件，甚至前端工具，皆如雨春筍的冒出頭，一下子 grunt 又一下子 gulp，一下子 browserify 又一下子 webpack 的，好不讓人眼花撩亂、霧裡看花啊！身為一個前端工程師，所要面對的不僅僅是多如牛毛的技術細節，還要應付各式各樣的煩悶又重複的工作，效能調校、圖片壓縮、打包JS/CSS檔案、套件版本管理與升級、... 全部都要會，沒有強烈的熱情著實難以為繼。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files=\"*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CityRay/f2e-workflow-labs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CityRay/f2e-workflow-labs/issues"
+  },
+  "homepage": "https://github.com/CityRay/f2e-workflow-labs#readme",
+  "dependencies": {
+    "demo2-0905": "^1.0.0",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "tap": "^1.4.0"
+  }
+}
