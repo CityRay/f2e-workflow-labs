@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var del = require('del');
+var webpack = require('gulp-webpack');
 var vinylPaths = require('vinyl-paths');
 
 var $ = require('gulp-load-plugins')();
@@ -11,7 +12,24 @@ var $ = require('gulp-load-plugins')();
 var runSequence = require('run-sequence');
 var minifyHTML = require('gulp-minify-html');
 var config = require('./config');
+var stripDebug = require('gulp-strip-debug');
 
+gulp.task('pack', function() {
+  return gulp.src('./app/app.module.js')
+    .pipe(webpack( require('./webpack.config.js') ))
+    .pipe(gulp.dest('./'))
+    .pipe($.uglify({
+            mangle: false,
+            compress: {
+                warnings: false,
+                drop_console: true
+            }
+        }))
+    .pipe($.rename({
+            extname: '.pro.js'
+        }))
+    .pipe(gulp.dest('./'));
+});
 
 gulp.task('default', ['mytask1'], function() {
     console.log('default task!');

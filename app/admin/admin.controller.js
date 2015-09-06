@@ -15,6 +15,8 @@
 
         function activate() {
             logger.info('Activated Admin View');
+
+            require('./admin.style.css');
         }
     }
 })();
